@@ -1,0 +1,10 @@
+<form (submit)="addTodo(todotext)" onsubmit="return false">
+  <input #todotext></input>
+  <button>Add Todo</button>
+</form>
+
+<ul>
+   <li *for="#todo of todos">
+     {{ todo }}
+   </li>
+</ul>
